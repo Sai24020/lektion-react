@@ -3,8 +3,8 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --button-primary-hover: #f81414;
+  --button-secondary-hover: #1e7b21;
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
@@ -13,7 +13,8 @@
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-bitter);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Liten skugga */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,9 +33,14 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  padding: 1rem;
+  border: 5px solid rgb(13, 83, 35);
+  border-radius: 0.5rem;
 }
 
 .main ol {
+  /*font-family: var(--font-geist-sans);
+  font-family: var(--font-island-moments);*/
   font-family: var(--font-geist-mono);
   padding-left: 0;
   margin: 0;
@@ -54,6 +60,7 @@
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
+  color: #f81414;
 }
 
 .ctas {

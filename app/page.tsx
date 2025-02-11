@@ -5,6 +5,14 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+      <Image
+          className={styles.logo}
+          src= "https://loremflickr.com/320/270"
+          alt="Next.js logo"
+          width={320}
+          height={280}
+          priority
+        />
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -19,6 +27,21 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+
+        <div>
+        <Image
+          src= "https://loremflickr.com/320/240"
+          alt="loren bild"
+          width={320}
+          height={280}
+          priority
+        />
+        <br></br>
+        Save and see your changes instantly.
+        Save and see your changes instantly.
+        Save and see your changes instantly.
+        Save and see your changes instantly.
+        </div>
 
         <div className={styles.ctas}>
           <a
