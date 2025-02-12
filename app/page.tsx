@@ -1,3 +1,4 @@
+/*   den gammla i 11feb
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -113,6 +114,23 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+    </div>
+  );
+}*/
+
+//den nya 12 feb
+import { fetchRecipe } from "@/actions";
+import styles from "./page.module.css";
+import { CardList } from "@/components/recipe-cards/cards";
+
+export default async function Home() {
+  const { recipes } = await fetchRecipe();
+
+  return (
+    <div className={styles.page}>
+      <main className={styles.main}>
+        <CardList recipes={recipes} />
+      </main>
     </div>
   );
 }

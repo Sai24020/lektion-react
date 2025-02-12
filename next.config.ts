@@ -6,10 +6,13 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'loremflickr.com',
+        hostname: 'cdn.dummyjson.com'
       },
     ],
   },
 };
 
 export default nextConfig;
+
+  /* protocol: 'https',
+        hostname: 'loremflickr.com',*///den gammla 11feb
